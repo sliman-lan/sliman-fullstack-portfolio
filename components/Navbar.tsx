@@ -10,25 +10,20 @@ export default function Navbar() {
     <header>
       <div className="container">
         <nav className="glass">
+          {/* BRAND LOGO & NAME */}
           <Link href="/" className="logo">
             <div className="logo-icon">
-              <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="5" opacity="0.9"/>
-                <circle cx="32" cy="16" r="4" opacity="0.8"/>
-                <circle cx="16" cy="32" r="4" opacity="0.7"/>
-                <circle cx="32" cy="32" r="5" opacity="0.85"/>
-                <circle cx="24" cy="8" r="2" opacity="1"/>
-                <circle cx="8" cy="24" r="2" opacity="0.9"/>
-                <circle cx="40" cy="24" r="2" opacity="0.9"/>
-                <circle cx="24" cy="40" r="2" opacity="1"/>
-                <circle cx="8" cy="8" r="1" opacity="0.6"/>
-                <circle cx="40" cy="8" r="1" opacity="0.6"/>
-                <circle cx="8" cy="40" r="1" opacity="0.6"/>
-                <circle cx="40" cy="40" r="1" opacity="0.6"/>
+              {/* Modern Developer Icon </ > */}
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 14 8 24 16 34" />
+                <polyline points="32 14 40 24 32 34" />
+                <line x1="26" y1="12" x2="22" y2="36" />
               </svg>
             </div>
-            <span>Glossy Touch</span>
+            <span>Sliman.dev</span>
           </Link>
+
+          {/* NAVIGATION LINKS */}
           <div className="nav-links">
             <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
             <Link href="/about" className={pathname === "/about" ? "active" : ""}>About</Link>
